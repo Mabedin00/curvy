@@ -1,6 +1,6 @@
 from display import *
 from draw import *
-from parser import *
+from parsers import *
 from matrix import *
 import math
 
@@ -19,4 +19,4 @@ transform = new_matrix()
 # print
 # print_matrix( make_rotZ(math.pi/4) )
 
-parse_file( 'picmaker', edges, transform, screen, color )
+parse_file( 'script', edges, transform, screen, color )

@@ -34,11 +34,11 @@ def add_bezier(points, x0, y0, x1, y1, x2, y2, x3, y3, step):
 
 def add_hermite(points, x0, y0, x1, y1, rx0, ry0, rx1, ry1, step):
     for i in range(0,step):
-    	t = float(i)/step
-    	ax = 2*x0 -2*x1 + (rx0) + (rx1)
-    	ay = 2*y0 -2*y1 + (ry0) + (ry1)
-    	bx = -3*x0 + 3*x1 - 2*(rx0) - (rx1)
-    	by = -3*y0 + 3*y1 - 2*(ry0) - (ry1)
+        t = float(i)/step
+        ax = 2*x0 -2*x1 + (rx0) + (rx1)
+        ay = 2*y0 -2*y1 + (ry0) + (ry1)
+        bx = -3*x0 + 3*x1 - 2*(rx0) - (rx1)
+        by = -3*y0 + 3*y1 - 2*(ry0) - (ry1)
         cx = rx0
         cy = ry0
         x = x0 + t*(cx + t*(bx + ax*t))
